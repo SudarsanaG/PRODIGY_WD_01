@@ -1,0 +1,102 @@
+*{margin: 4px;
+    padding:2px;}
+    .navbar
+    {display: flex;
+    height: 70px;}
+    .navbar li{
+        list-style: none;
+        padding: 0 12px;
+    font-size: 20px;
+    font-weight: bold;
+    }
+    
+        .navbar li:hover {
+            background-color:white;
+        }
+    #content {
+        width: 500px;
+        padding:50px;
+        padding-top:0;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        color:white;
+        max-height:200px;
+        overflow:hidden;
+        -webkit-transition: max-height 0.7s;
+        -moz-transition: max-height 0.7s;
+            transition: max-height 0.7s;
+    }
+    #content.open{
+        max-height: 800px;
+        -webkit-transition: max-height 0.7s;
+        -moz-transition: max-height 0.7s;
+            transition: max-height 0.7s;
+    }
+        #btn{
+                              
+            font-weight: bold;
+            cursor: pointer;
+            padding:7px 12px;
+            border: 2px solid white;
+            border-radius: 6px;
+            color: white;
+            background-color:rgb(27, 178, 243);
+            }
+            .my-1{
+            
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color:rgb(27, 178, 243);
+                font-size: 28px;
+            }
+            .section1
+            {
+                background-image: url('222.jpeg');
+                background-size: cover; 
+                    background-repeat: no-repeat;
+                min-height: 700px;
+                color:white;
+                
+              }
+              .section1::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('123.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                opacity: 0.5; /* Adjust the opacity value as needed */
+                z-index: -1; /* Ensure the pseudo-element is behind other content */
+            }
+              
+    
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar li {
+            padding: 10px 0;
+        }
+    }
+    .popular
+    {color:rgb(27, 178, 243);
+    font-weight: bold;
+    font-size: 30px;}
+
+    
+    .footer-nav
+    {
+        color:black ;
+        font-family:Georgia, 'Times New Roman', Times, serif ;
+        font-size: 20px;
+    }
+    .footer{
+        color:black;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
